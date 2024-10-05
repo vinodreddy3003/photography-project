@@ -48,7 +48,7 @@ const Homepage = () => {
           <img src={appleImage2} alt="Slide 4" className="homepage-slide-image" />
         </SwiperSlide>
         <SwiperSlide className="homepage-swiper-slide">
-          <img src="../assets/LRM_EXPORT_157500206535837_20190412_232614882.jpeg" alt="Slide 5" className="homepage-slide-image" />
+          <img src={modelingImage} alt="Slide 5" className="homepage-slide-image" />
         </SwiperSlide>
       </Swiper>
       <ChatButton />
