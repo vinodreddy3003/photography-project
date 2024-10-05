@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./Navbar.css";
+import navImage from '../assets/WhatsApp Image 2024-10-03 at 16.11.26_93f1485a.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/"><img src="src/assets/WhatsApp Image 2024-10-03 at 16.11.26_93f1485a.jpg" alt="" /></Link>
+        <Link to="/"><img src={navImage} alt="" /></Link>
       </div>
 
       <ul className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
