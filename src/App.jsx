@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import PreWedding from "./components/PreWedding"; // Component for pre-wedding
 import Modeling from "./components/Modeling";
-import Films from "./components/Films";
+// import Films from "./components/Films";
 import Birthday from "./components/Birthday";
 import Wedding from "./components/Wedding";
 import Reception from "./components/Reception";
@@ -26,7 +26,7 @@ function App() {
           <Route path="/prewedding" element={<PreWedding />} />
           <Route path="/modeling" element={< Modeling />} />
           <Route path="/birthday" element={<Birthday />} />
-          <Route path="/films" element={<Films />} />
+{/*           <Route path="/films" element={<Films />} /> */}
           <Route path="/reception" element={<Reception />} />
    
           <Route path="/contact" element={<Contact />} /> 
