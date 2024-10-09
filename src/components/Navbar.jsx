@@ -1,34 +1,53 @@
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import "./Navbar.css";
-import navImage from '../assets/WhatsApp Image 2024-10-03 at 16.11.26_93f1485a.jpg';
+import navImage from '../assets/WhatsApp Image 2024-10-07 at 11.53.37_2fdd34b1.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navbarRef = useRef(null); // Create a ref for the navbar
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
+  const handleClickOutside = useCallback((event) => {
+    // Check if the click is outside the navbar
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setIsMenuOpen(false); // Close the menu
+    }
+  }, []);
+
+  useEffect(() => {
+    // Add event listener when the menu is open
+    if (isMenuOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    // Cleanup event listener on unmount or when menu is closed
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isMenuOpen, handleClickOutside]); // Run effect when isMenuOpen changes
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navbarRef}>
       <div className="navbar-logo">
         <Link to="/"><img src={navImage} alt="" /></Link>
       </div>
 
       <ul className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
         <li>
-          <Link to="/" onClick={toggleMenu}>Home</Link>
+          <NavLink to="/" onClick={toggleMenu} activeClassName="active-link">Home</NavLink>
         </li>
         <li className="dropdown">
-          <Link to="/about" onClick={toggleMenu}>About</Link>
+          <NavLink to="/about" onClick={toggleMenu} activeClassName="active-link">About</NavLink>
         </li>
         <li className="dropdown">
-          <Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link>
-          
+          <NavLink to="/portfolio" onClick={toggleMenu} activeClassName="active-link">Portfolio</NavLink>
         </li>
         <li>
-          <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+          <NavLink to="/contact" onClick={toggleMenu} activeClassName="active-link">Contact</NavLink>
         </li>
       </ul>
 
