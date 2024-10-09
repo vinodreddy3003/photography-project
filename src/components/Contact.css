@@ -31,7 +31,7 @@ html, body {
 
 /* Contact Information */
 .contact-info {
-  margin-top: 20px;
+ 
   text-align: center;
 }
 
@@ -162,13 +162,13 @@ html, body {
   background-color: #DEDCCF;
   color: #6B707F;
   border: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   font-size: 18px; /* Keep size consistent */
   border-radius: 5px;
   cursor: pointer;
   display: block;
   width: 100%; /* Full width button */
-  max-width: 219px; /* Limit max width */
+  max-width: 150px; /* Limit max width */
   height: 60px;
   margin-top: 20px;
 }
@@ -225,3 +225,61 @@ html, body {
     font-size: 16px; /* Smaller font size for options */
   }
 }
+/* Tablet Version */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  .contact-container {
+    padding: 30px; /* Adjust padding for tablet */
+  }
+
+  .contact-info h2 {
+    font-size: 24px; /* Slightly smaller font size for tablet */
+    margin-top: 80px; /* Adjusted top margin */
+  }
+
+  .contact-info p {
+    font-size: 16px; /* Slightly smaller font size for tablet */
+    margin-top: 15px;
+  }
+
+  .separator {
+    width: 60%; /* Adjust separator width for tablet */
+    margin-top: 24px; /* Reduce top margin */
+  }
+
+  .contact-form {
+    margin-top: 30px; /* Reduced margin for tablet */
+    max-width: 700px; /* Adjust width for tablet */
+  }
+
+  .contact-form h2 {
+    font-size: 24px; /* Slightly smaller font size for tablet */
+    margin-bottom: 25px;
+  }
+
+  .contact-form p {
+    font-size: 18px; /* Slightly smaller font size for tablet */
+    margin-bottom: 80px;
+  }
+
+  .form-group {
+    margin-top: 30px; /* Adjust margin for tablet */
+  }
+
+  .form-group label {
+    font-size: 15px; /* Slightly smaller font size for labels on tablet */
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 15px; /* Slightly smaller font size for inputs on tablet */
+  }
+
+  .bu {
+    font-size: 16px; /* Adjust button font size for tablet */
+    height: 50px; /* Slightly smaller height for tablet */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
