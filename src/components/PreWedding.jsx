@@ -16,6 +16,7 @@ import img10 from '../assets/preweddingpics/IMG-20240914-WA0012.jpg';
 import img11 from '../assets/preweddingpics/IMG-20240914-WA0018.jpg';
 import img12 from '../assets/preweddingpics/IMG-20240914-WA0019.jpg';
 import img13 from '../assets/preweddingpics/IMG-20240914-WA0012.jpg';
+import FooterR from './FooterR';
 
 // Array of imported images
 const images = [
@@ -52,6 +53,7 @@ const PreWedding = () => {
           <img className="modal-content" src={currentImage} alt="Selected" />
         </div>
       )}
+      <FooterR />
     </>
   );
 };
