@@ -64,3 +64,25 @@
   margin-top: 5px;
   font-family: 'Times New Roman', serif; /* Consistent font family */
 }
+/* Tablet Version */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .portfolio {
+    -webkit-column-count: 2; /* Keep two columns for tablet */
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 10px 50px; /* Adjusted margin for tablet */
+  }
+
+  .portfolio-card {
+    margin-bottom: 25px; /* Adds slightly more spacing between cards for tablet */
+  }
+
+  .overlay h2 {
+    font-size: 22px; /* Slightly smaller for tablet */
+  }
+
+  .overlay p {
+    font-size: 0.85rem; /* Adjusted font size for tablet readability */
+  }
+}
+
