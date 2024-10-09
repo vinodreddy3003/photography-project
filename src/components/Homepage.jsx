@@ -1,10 +1,11 @@
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade'; // Import the fade effect CSS
 import './Homepage.css';
 
-import { useNavigate } from 'react-router-dom';  // Import useNavigate hook
+import { useNavigate } from 'react-router-dom';  
 import ChatButton from './ChatButton';
 import FooterR from './FooterR';
 
@@ -15,13 +16,13 @@ import preWeddingImage1 from '../assets/preweddingpics/IMG-20240914-WA0019.jpg';
 import preWeddingImage2 from '../assets/preweddingpics/IMG-20240914-WA0013.jpg';
 import birthdayImage from '../assets/Birthday/IMG_9203.JPG';
 import modelingImage from '../assets/modeling/LRM_EXPORT_131562256033281_20190411_233159615.jpeg';
+import Testimonials from './Testimonials';
 
 const Homepage = () => {
-  const navigate = useNavigate();  // Initialize useNavigate
+  const navigate = useNavigate();  
 
-  // Function to handle Book Now button click and navigate to contact page
   const handleBookNowClick = () => {
-    navigate('/contact');  // Redirect to the /contact route and scroll to the section
+    navigate('/contact');  
   };
 
   return (
@@ -30,9 +31,12 @@ const Homepage = () => {
         className="homepage-swiper"
         spaceBetween={10}
         slidesPerView={1}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, EffectFade]} // Include the EffectFade module
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
+        effect="fade" // Set the effect to fade for smooth transitions
+        speed={800} // Transition speed in milliseconds
+        loop={true} // Enable looping of slides
       >
         {/* Swiper slides */}
         <SwiperSlide className="homepage-swiper-slide">
@@ -90,7 +94,7 @@ const Homepage = () => {
           <div className="engagement-content">
             <h2 className="engagement-heading">Wedding Shoot</h2>
             <p className="engagement-description">
-            We provide a unique wedding photoshoot experience<br/>  that will elevate your special day and capture<br/>  unforgettable memories you'll <br/> cherish forever.
+            We provide a unique wedding photoshoot experience<br/>  that will elevate your special day and capture<br/>  unforgettable memories you'll  cherish forever.
             </p>
             <button className="engagement-button" onClick={handleBookNowClick}>Book Now</button>
           </div>
@@ -118,6 +122,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Testimonials />
       <FooterR />
     </div>
   );
