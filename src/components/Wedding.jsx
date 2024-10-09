@@ -16,34 +16,13 @@ import img10 from '../assets/wedding/Copy of Apple (426).jpg';
 import img11 from '../assets/wedding/Copy of Apple (428).jpg';
 import img12 from '../assets/wedding/Copy of Apple (431).jpg';
 import img13 from '../assets/wedding/Copy of Apple (432).jpg';
-import img14 from '../assets/wedding/IMG-20240914-WA0006.jpg';
-import img15 from '../assets/wedding/IMG-20240914-WA0021.jpg';
-import img16 from '../assets/wedding/IMG-20240914-WA0023.jpg';
-import img17 from '../assets/wedding/IMG-20240914-WA0048.jpg';
-import img18 from '../assets/wedding/IMG-20240914-WA0050.jpg';
-import img19 from '../assets/wedding/IMG-20240914-WA0052.jpg';
-import img20 from '../assets/wedding/IMG-20240914-WA0054.jpg';
-import img21 from '../assets/wedding/IMG-20240914-WA0056.jpg';
-import img22 from '../assets/wedding/IMG-20240914-WA0060.jpg';
-import img23 from '../assets/wedding/IMG-20240914-WA0062.jpg';
-import img24 from '../assets/wedding/IMG-20240914-WA0064.jpg';
-import img25 from '../assets/wedding/IMG-20240914-WA0066.jpg';
-import img26 from '../assets/wedding/IMG-20240914-WA0068.jpg';
-import img27 from '../assets/wedding/IMG-20240914-WA0070.jpg';
-import img28 from '../assets/wedding/IMG-20240914-WA0072.jpg';
-import img29 from '../assets/wedding/IMG-20240914-WA0074.jpg';
-import img30 from '../assets/wedding/IMG-20240914-WA0076.jpg';
-import img31 from '../assets/wedding/IMG-20240914-WA0078.jpg';
-import img32 from '../assets/wedding/IMG-20240914-WA0080.jpg';
-import img33 from '../assets/wedding/IMG-20240914-WA0082.jpg';
+
+import FooterR from './FooterR';
 
 // Array of imported images
 const images = [
   img1, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-  img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
-  img31, img32, img33
-];
+  img11, img12, img13]
 
 const Wedding = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +54,7 @@ const Wedding = () => {
           <img className="modal-content" src={currentImage} alt="Selected" />
         </div>
       )}
+      <FooterR />
     </>
   );
 };
