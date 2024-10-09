@@ -19,6 +19,7 @@ import img13 from '../assets/modeling/LRM_EXPORT_157500206535837_20190412_232614
 import img14 from '../assets/modeling/LRM_EXPORT_157930514070006_20190412_233325189.jpeg';
 import img15 from '../assets/modeling/LRM_EXPORT_158455762806861_20190412_234211005.jpeg';
 import img16 from '../assets/modeling/LRM_EXPORT_131562256033281_20190411_233159615.jpeg';
+import FooterR from './FooterR';
 // Add more imports here if neede
 
 const images = [
@@ -56,6 +57,7 @@ const Modeling = () => {
           <img className="modal-content" src={currentImage} alt="Selected" />
         </div>
       )}
+      <FooterR />
     </>
   );
 };
