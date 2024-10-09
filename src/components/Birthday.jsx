@@ -31,6 +31,7 @@ import img25 from '../assets/Birthday/IMG_9222.JPG';
 import img26 from '../assets/Birthday/IMG_9228.JPG';
 import img27 from '../assets/Birthday/IMG_9243.JPG';
 import img28 from '../assets/Birthday/IMG_9230.JPG';
+import FooterR from './FooterR';
 
 // Array of imported images
 const images = [
@@ -68,6 +69,7 @@ const Birthday = () => {
           <img className="modal-content" src={currentImage} alt="Selected" />
         </div>
       )}
+      <FooterR />
     </>
   );
 };
