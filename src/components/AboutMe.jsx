@@ -22,8 +22,9 @@ const AboutMe = () => {
 
 Over the years, I’ve had the privilege of achieving several milestones in my photography journey. My work has been featured in local exhibitions, and I’ve collaborated with various brands for promotional campaigns. Winning awards in photography contests has further validated my efforts and fueled my ambition to grow.
 
-Looking ahead, my goals are to expand my portfolio by exploring new styles and subjects, particularly in portrait and documentary photography. I aspire to host my own exhibitions, share my knowledge through workshops, and connect with fellow photographers globally. Ultimately, I aim to use my photography to tell impactful stories and inspire others to see the beauty in everyday life.
+
             </p>
+            <p>Looking ahead, my goals are to expand my portfolio by exploring new styles and subjects, particularly in portrait and documentary photography. I aspire to host my own exhibitions, share my knowledge through workshops, and connect with fellow photographers globally. Ultimately, I aim to use my photography to tell impactful stories and inspire others to see the beauty in everyday life.</p>
           </div>
           <div className="image-section">
             <img src={portraitImage1} alt="Photographer 1" className="portrait-image" />
