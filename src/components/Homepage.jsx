@@ -83,7 +83,7 @@ const Homepage = () => {
           <img src={preWeddingImage1} alt="Engagement Shoot 2" className="engagement-image" />
           <div className="engagement-content">
             <h2 className="engagement-heading">Pre-wedding Shoot</h2>
-            <p className="engagement-description">We create a personalized pre-wedding photoshoot<br/> experience that captures the essence of your love story,<br/>  preserving the joy and excitement of this special time in <br/> stunning, timeless photos.
+            <p className="engagement-description">We create a personalized pre-wedding photoshoot<br/> experience that captures the essence of your love<br/>  story, preserving the joy and excitement of this special<br/>time in stunning,timeless photos.
             </p>
             <button className="engagement-button" onClick={handleBookNowClick}>Book Now</button>
           </div>
