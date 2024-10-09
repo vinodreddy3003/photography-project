@@ -15,8 +15,8 @@
     }
   
     .chat-button button {
-      width: 60px;   /* Adjust button size for mobile */
-      height: 60px;  /* Adjust button size for mobile */
+      width: 40px;   /* Adjust button size for mobile */
+      height: 40px;  /* Adjust button size for mobile */
     }
   
     .anticon {
