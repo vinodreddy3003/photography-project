@@ -1,0 +1,5 @@
+body, html {
+    scroll-behavior: auto !important;
+    overflow: visible !important;
+  }
+  
