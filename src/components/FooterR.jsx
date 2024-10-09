@@ -20,14 +20,14 @@ const FooterR = () => {
         <p className="footer-address">
               510, 2ND BLOCK, 4TH CROSS, 68, YAJAMAN LAYOUT, Begur, Bengaluru, Karnataka 560068<br />
               VJHF+W8 Bengaluru, Karnataka<br />
-                Mobile Number: +919980400473
+                Mobile Number: +919980400473,+918553429346
         </p>
         
         <div className="footer-social">
           <a href="https://wa.me/9980400473" target="_blank" rel="noopener noreferrer" className="footer-social-link">
             <WhatsAppOutlined className="footer-social-icon" />
           </a>
-          <a href="https://www.instagram.com/photography_ram/profilecard/?igsh=MXVmdW91M3N6dmJxcQ==" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+          <a href="https://www.instagram.com/_photography_sai/profilecard/?igsh=MXVmdW91M3N6dmJxcQ== " target="_blank" rel="noopener noreferrer" className="footer-social-link">
             <InstagramOutlined className="footer-social-icon" />
           </a>
         </div>
@@ -38,7 +38,7 @@ const FooterR = () => {
       </div>
     </div>
     <div className="footer-bottom">
-      <p>All Rights Reserved | Copyright © 2024 Blessed Photography Website.</p>
+      <p>All Rights Reserved | Copyright © 2024 Blessed Photography Website.Designed by Vinod Reddy & Ajay Kumar </p>
     </div>
   </Footer>
 
