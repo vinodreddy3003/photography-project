@@ -84,7 +84,7 @@ const Contact = () => {
 
                     <div className="separator"></div>
                     <div className="call">
-                        <p>+91 9848550066,+91 8553429346</p>
+                        <p>+91 9980400473,+91 8553429346</p>
                         
                     </div>
                     <div className="que">
