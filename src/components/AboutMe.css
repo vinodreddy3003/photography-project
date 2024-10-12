@@ -1,6 +1,7 @@
 /* General Styles for All Devices */
 .about-us-container {
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .top-image-section {
@@ -133,12 +134,12 @@
     width: 100%; /* Full width for image section */
     justify-content: center; /* Center images */
     margin: 0; /* Remove right margin */
+    padding: 0 10px; /* Add a small padding to avoid the image touching edges */
   }
 
   .portrait-image {
     width: 80%; /* Make the image smaller on mobile */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space between images */
-     /* Keep the border-radius */
   }
 }
