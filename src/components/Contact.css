@@ -31,7 +31,6 @@ html, body {
 
 /* Contact Information */
 .contact-info {
- 
   text-align: center;
 }
 
@@ -39,7 +38,7 @@ html, body {
   color: #6B707F;
   font-size: 26px; /* Larger font for readability */
   font-weight: 500;
-  margin-top: 120px;
+  margin-top: 70px;
   border: 1px solid #6B707F;
   padding: 16px 24px;
   display: inline-flex;
@@ -133,7 +132,6 @@ html, body {
   border: none;
   outline: none;
   border-bottom: 1px solid #6B707F; /* Rounded corners */
-   /* Light background */
   font-size: 16px; /* Consistent font size */
 }
 
@@ -213,7 +211,9 @@ html, body {
   }
 
   .header-image {
-    height: 200px; /* Set a height for the header image on mobile */
+    width: 100%; /* Full width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
   }
 
   /* Adjustments for specific event type titles and options */
@@ -225,9 +225,9 @@ html, body {
     font-size: 16px; /* Smaller font size for options */
   }
 }
+
 /* Tablet Version */
 @media (min-width: 481px) and (max-width: 1024px) {
-
   .contact-container {
     padding: 30px; /* Adjust padding for tablet */
   }
@@ -282,4 +282,3 @@ html, body {
     padding: 10px 20px; /* Adjust padding */
   }
 }
-
