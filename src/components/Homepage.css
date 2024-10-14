@@ -1,4 +1,4 @@
-/* Base styles */
+
 .homepage-swiper-container {
     width: 100%;
     max-width: 1620px;
@@ -51,7 +51,7 @@
 }
 
 .homepage-description {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat';
     font-size: 18px;
     color: #333;
     text-align: justify;
@@ -64,7 +64,7 @@
 .homepage-engagement-section {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    
     margin-top: 146px;
 }
 
@@ -104,7 +104,7 @@
     font-family: 'Poppins';
     font-size: 20px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -129,11 +129,14 @@
 
 .homepage-engagement-card.reverse {
     flex-direction: row-reverse;
+
 }
 
 .homepage-engagement-card.reverse .engagement-content {
     margin-left: 0;
     margin-right: 100px;
+    
+
 }
 
 /* Phone version */
@@ -166,9 +169,9 @@
     }
 
     .engagement-image {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
     }
 
     .engagement-content {
@@ -183,12 +186,13 @@
 
     .engagement-description {
         font-size: 0.8rem;
-        margin-bottom: 10px; /* Reduced margin */
+        margin-bottom: 20px; /* Reduced margin */
     }
 
     .engagement-button {
-        padding: 12px 16px;
+        padding: 12px 28px;
         font-size: 14px;
+        margin-bottom: 44px;
     }
 
     .homepage-engagement-card.reverse {
@@ -202,9 +206,9 @@
     }
 
     .homepage-engagement-card.reverse .engagement-image {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
     }
 
     .homepage-text-section {
@@ -246,9 +250,9 @@
     }
 
     .engagement-image {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
     }
 
     .engagement-heading {
@@ -258,12 +262,13 @@
 
     .engagement-description {
         font-size: 0.75rem;
-        margin-bottom: 8px; /* Further reduced margin */
+        margin-bottom: 20px; /* Further reduced margin */
     }
 
     .engagement-button {
-        padding: 10px 20px;
-        font-size: 1rem;
+        padding: 12px 28px;
+        font-size: 14px;
+        margin-bottom: 44px;
     }
 
     .homepage-text-section {
@@ -272,6 +277,11 @@
 
     .homepage-engagement-card.reverse {
         flex-direction: column;
+    }
+    .homepage-engagement-card.reverse .engagement-image {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
     }
 }
 
