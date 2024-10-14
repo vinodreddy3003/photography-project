@@ -1,6 +1,8 @@
 .testimonials-container {
 
   border-radius: 10px;
+  margin-bottom: 20px;
+  
   
 }
 
@@ -35,13 +37,20 @@
   padding: 20px;
 }
 
-.testimonial-card {
+.testimonial-card p {
  
   border-radius: 10px;
+  font-family: 'poppins';
+  color: #6B707F;
 
   padding: 20px;
   max-width: 900px;
   margin: auto;
+}
+.testimonial-card h4{
+  font-family: 'poppins';
+  color: black;
+  font-weight: bold;
 }
 
 .stars {
@@ -50,33 +59,7 @@
   margin-bottom: 20px;
 }
 
-.read-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.read-button:hover {
-  background-color: #0056b3;
-}
-.testimonial-card h4{
-  margin-top: 20px;
-}
-
-
-
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  color: #333;
-  cursor: pointer;
-}
 
 .pagination-bullet {
   background: #007bff;
@@ -97,7 +80,7 @@
 /* Tablet styles */
 @media (max-width: 768px) {
   .testimonials-title {
-      font-size: 20px; /* Slightly smaller title */
+      font-size: 38px; /* Slightly smaller title */
   }
 
   .testimonials-subtitle {
@@ -121,7 +104,7 @@
 /* Phone styles */
 @media (max-width: 480px) {
   .testimonials-title {
-      font-size: 18px; /* Smaller title for phones */
+      font-size: 40px; /* Smaller title for phones */
   }
 
   .testimonials-subtitle {
