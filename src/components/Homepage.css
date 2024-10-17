@@ -68,7 +68,7 @@
     align-items: center;
     gap: 10px;
     color: black;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     word-wrap: break-word;
@@ -301,7 +301,7 @@
     }
 
     .header {
-        font-size: 24px;
+        font-size: 17px;
         padding: 10px 20px;
     }
 
