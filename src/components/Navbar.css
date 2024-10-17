@@ -31,8 +31,8 @@
 }
 
 .navbar-logo img {
-  width: 150px; /* Adjust width for desktop */
-  height: 150px;
+  width: 250px; /* Adjust width for desktop */
+  height: 250px;
   object-fit: contain;
   margin-left: 70px;
   margin-top: 7px; /* Adjust for alignment */
@@ -130,7 +130,7 @@
   }
 
   .navbar-logo img {
-    width: 100px; /* Adjust logo width for mobile */
-    margin-left: 10px; /* Adjust margin for mobile */
+    width: 190px; /* Adjust logo width for mobile */
+    margin-left: -25px; /* Adjust margin for mobile */
   }
 }
