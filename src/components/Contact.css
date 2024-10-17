@@ -211,9 +211,10 @@ html, body {
   }
 
   .header-image {
-    width: 100%; /* Full width */
-    height: 200px; /* Set fixed height */
-    object-fit: cover; /* Ensure image maintains aspect ratio */
+    width: 100%; /* Full width for image section */
+    justify-content: center; /* Center images */
+    margin: 0; /* Remove right margin */
+    padding: 0 10px; /* Ensure image maintains aspect ratio */
   }
 
   /* Adjustments for specific event type titles and options */
