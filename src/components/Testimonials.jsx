@@ -59,7 +59,7 @@ const Testimonials = () => {
     <div className="testimonials-container">
       <h2 className="testimonials-title">Heartfelt Testimonials</h2>
       <p className="testimonials-subtitle">
-        Explore rave reviews from treasured clients. Find out why couples<br/> are over the moon about their wedding photography experience.
+        Explore rave reviews from treasured clients. Find out why couples are over the moon about their wedding photography experience.
       </p>
       <Swiper
   ref={swiperRef} // Set the ref here
