@@ -6,7 +6,7 @@
 }
 
 .homepage-swiper {
-    border-radius: 10px;
+   
     overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    
 }
 
 .swiper-pagination-bullet {
@@ -42,24 +42,80 @@
     color: #333;
 }
 
-.homepage-heading {
-    font-family: 'Playfair Display';
-    font-size: 60px;
-    color: #000;
-    text-align: center;
-    margin-top: 140px;
+.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 110px;
+    padding-bottom: 51px;
+    padding-left: 254px;
+    padding-right: 253px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 55px;
+    margin-top: 10px;
+    
 }
 
-.homepage-description {
-    font-family: 'Montserrat';
-    font-size: 18px;
-    color: #333;
-    text-align: justify;
-    text-align-last: center;
-    margin-top: 96px;
-    max-width: 100%;
-    padding: 0 20px;
+.header {
+   
+    padding: 8px 94px;
+    border: 1px solid #6B707F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    
 }
+
+
+
+.description p {
+    
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    gap: 30px;
+    line-height: 25px;
+   
+    
+   
+}
+
+
+
+.highlight {
+    font-weight: 600;
+}
+
+.buttonsss {
+    padding: 16px 64px;
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    color: white;
+    border: 2px solid #BFD5C8;
+    background-color: #BFD5C8;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+.buttonsss:hover {
+    background-color: #BFD5C8;
+    color: #fff;
+}
+
+
 
 .homepage-engagement-section {
     display: flex;
@@ -145,16 +201,26 @@
         height: auto;
     }
 
-    .homepage-heading {
-        font-size: 2rem;
-        margin: 40px 0; /* Reduced margin */
+    .container {
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        gap: 40px;
     }
 
-    .homepage-description {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 20px; /* Reduced margin */
-        padding: 0 20px;
+    .header {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .buttonsss {
+        padding: 12px 48px;
+        font-size: 28px;
     }
 
     .homepage-engagement-section {
@@ -177,6 +243,7 @@
     .engagement-content {
         margin-left: 0;
         text-align: center;
+        font-family: 'Playfair Display';
     }
 
     .engagement-heading {
@@ -226,17 +293,7 @@
         height: auto;
     }
 
-    .homepage-heading {
-        font-size: 2.5rem;
-        margin-top: 40px; /* Reduced margin */
-    }
-
-    .homepage-description {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        margin-top: 20px; /* Reduced margin */
-        padding: 0 10px;
-    }
+    
 
     .homepage-engagement-section {
         gap: 20px;
@@ -258,6 +315,7 @@
     .engagement-heading {
         font-size: 2rem;
         margin-bottom: 8px; /* Further reduced margin */
+        font-family: 'Playfair Display';
     }
 
     .engagement-description {
