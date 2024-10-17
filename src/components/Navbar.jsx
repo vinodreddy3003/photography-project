@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import "./Navbar.css";
-import navImage from '../assets/WhatsApp Image 2024-10-07 at 11.53.37_2fdd34b1.jpg';
+import navImage from '../assets/Ajna_logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
