@@ -11,13 +11,15 @@ import Wedding from "./components/Wedding";
 import Reception from "./components/Reception";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
-// Import the ScrollToTop component
+import CustomCursor from "./components/CustomCursor";
+
 
 function App() {
   return (
     <>
       <Navbar />
       < ScrollToTop /> {/* Place the ScrollToTop component here */}
+      <CustomCursor />
       <div className="content">
         <Routes>
           <Route path="/" element={<Homepage />} />
