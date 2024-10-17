@@ -15,14 +15,19 @@ import appleImage2 from '../assets/Copy of Apple (447).jpg';
 import preWeddingImage1 from '../assets/preweddingpics/IMG-20240914-WA0019.jpg';
 import preWeddingImage2 from '../assets/preweddingpics/IMG-20240914-WA0013.jpg';
 import birthdayImage from '../assets/Birthday/IMG_9203.JPG';
-import modelingImage from '../assets/modeling/LRM_EXPORT_131562256033281_20190411_233159615.jpeg';
+import modelingImage from '../assets/modeling/LRM_EXPORT_156126289644336_20190412_230321069.jpeg';
 import Testimonials from './Testimonials';
+import modelingImages from '../assets/modeling/LRM_EXPORT_157500206535837_20190412_232614882 (1).jpeg';
+
 
 const Homepage = () => {
   const navigate = useNavigate();  
 
   const handleBookNowClick = () => {
     navigate('/contact');  
+  };
+  const handlePortfolio = () => {
+    navigate('/portfolio');  
   };
 
   return (
@@ -52,19 +57,23 @@ const Homepage = () => {
           <img src={appleImage2} alt="Slide 4" className="homepage-slide-image" />
         </SwiperSlide>
         <SwiperSlide className="homepage-swiper-slide">
-          <img src={modelingImage} alt="Slide 5" className="homepage-slide-image" />
+          <img src={modelingImages} alt="Slide 5" className="homepage-slide-image" />
         </SwiperSlide>
       </Swiper>
       <ChatButton />
       
-      <div className="homepage-intro">
-        <h1 className="homepage-heading">We cover all types of events</h1>
-        <p className="homepage-description">
-          Welcome to <b>Blessed Photography!</b> I am passionate about capturing the precious and significant moments<br />
-          in people's lives. My joy and satisfaction come from seeing the beautiful smiles of individuals I've had the<br />
-          pleasure to photograph. Each click is a chance to preserve and celebrate those unique, joyous moments.
-        </p>
-      </div>
+      <div className="container">
+    
+        <div className="header">We cover all types of events</div>
+    
+    <div className="description">
+      <p>Welcome to<b> Ajna clicks!</b> Called as the 3rd eye We are passionate about capturing the precious and significant moments in people's lives. Our joy and satisfaction come from seeing the beautiful smiles of individuals we've had the pleasure to photograph. Each click is a chance for us to preserve and celebrate those unique, joyous moments.</p>
+
+    </div>
+        <div className="buttonsss" onClick={handlePortfolio}>Snapshots</div>
+    
+</div>
+
       
       <div className="homepage-engagement-section">
         {/* Engagement Cards */}
