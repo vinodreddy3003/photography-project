@@ -38,7 +38,7 @@ const FooterR = () => {
       </div>
     </div>
     <div className="footer-bottom">
-      <p>All Rights Reserved | Copyright © 2024 Blessed Photography Website.Designed by Vinod Reddy & Ajay Kumar </p>
+      <p>All Rights Reserved | Copyright © 2024 Ajna clicks Photography Website.Designed by Vinod Reddy & Ajay Kumar </p>
     </div>
   </Footer>
 
