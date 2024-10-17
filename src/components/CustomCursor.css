@@ -1,0 +1,29 @@
+/* Hide the default mouse cursor */
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;  /* Prevent the cursor from interfering with clicks */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.cursor-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .custom-cursor {
+    display: none;
+  }
+
+  body {
+    cursor: default; /* Restore default cursor behavior for phones */
+  }
+}
