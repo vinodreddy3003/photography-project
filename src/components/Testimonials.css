@@ -1,16 +1,14 @@
+/* General styles */
 .testimonials-container {
-
   border-radius: 10px;
   margin-bottom: 20px;
-  
-  
 }
 
 .testimonials-title {
   text-align: center;
   font-size: 60px;
   color: #D4AF37;
- font-family: 'Alex Brush';
+  font-family: 'Alex Brush';
   margin-bottom: 10px;
   font-weight: 400;
 }
@@ -38,17 +36,16 @@
 }
 
 .testimonial-card p {
- 
   border-radius: 10px;
   font-family: 'poppins';
   color: #6B707F;
-
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
-  text-align: justify;
+  text-align: center;
 }
-.testimonial-card h4{
+
+.testimonial-card h4 {
   font-family: 'poppins';
   color: black;
   font-weight: bold;
@@ -59,8 +56,6 @@
   color: #FFD700;
   margin-bottom: 20px;
 }
-
-
 
 .pagination-bullet {
   background: #007bff;
@@ -78,59 +73,92 @@
   opacity: 0.7;
 }
 
-/* Tablet styles */
-@media (max-width: 768px) {
+/* Media Queries */
+
+/* Styles for devices with max-width 360px and max-height 740px */
+@media (max-width: 360px) and (max-height: 740px) {
   .testimonials-title {
-      font-size: 38px; /* Slightly smaller title */
+    font-size: 40px; /* Smaller title */
   }
 
   .testimonials-subtitle {
-      font-size: 14px; /* Slightly smaller subtitle */
+    font-size: 12px; /* Smaller subtitle */
   }
 
   .testimonial-card {
-      padding: 15px; /* Reduced padding for smaller screens */
-      max-width: 90%; /* Allow more width on smaller screens */
+    padding: 10px; /* Reduced padding */
   }
 
   .stars {
-      font-size: 18px; /* Slightly smaller star size */
+    font-size: 16px; /* Smaller star size */
   }
 
   .read-button {
-      padding: 8px 12px; /* Reduced padding for button */
+    font-size: 12px; /* Smaller button text */
+    padding: 6px; /* Reduced padding */
+  }
+
+  .testimonial-card p {
+    padding: 10px; /* Adjust spacing */
+    margin: 0 5px; /* Add margin to create space */
+    text-align: center; /* Keep text justified */
   }
 }
 
-/* Phone styles */
+/* Styles for devices with max-width 480px */
 @media (max-width: 480px) {
   .testimonials-title {
-      font-size: 40px; /* Smaller title for phones */
+    font-size: 38px; /* Slightly smaller title */
   }
 
   .testimonials-subtitle {
-      font-size: 12px; /* Smaller subtitle for phones */
+    font-size: 11px; /* Smaller subtitle for phones */
   }
 
   .testimonial-card {
-      padding: 10px; /* Further reduced padding for phones */
+    padding: 8px; /* Further reduced padding */
   }
 
   .stars {
-      font-size: 16px; /* Smaller star size for phones */
+    font-size: 14px; /* Smaller star size */
   }
 
   .read-button {
-      font-size: 14px; /* Smaller button text */
-      padding: 8px; /* Reduced padding for button */
+    font-size: 12px; /* Smaller button text */
+    padding: 5px; /* Reduced padding for button */
   }
+
   .testimonial-card p {
-    padding: 15px;  /* Adjust spacing for phones */
-    margin: 0 10px; /* Add margin to create space from edges */
-    text-align: justify; /* Keep text justified for alignment */
-}
+    padding: 8px; /* Adjust spacing for phones */
+    margin: 0 5px; /* Margin for spacing */
+    text-align: center; /* Keep text justified */
+  }
 
   .modal-content {
-      padding: 15px; /* Reduced padding in modal */
+    padding: 10px; /* Reduced padding in modal */
+  }
+}
+
+/* Styles for tablets with max-width 768px */
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 36px; /* Slightly smaller title */
+  }
+
+  .testimonials-subtitle {
+    font-size: 14px; /* Slightly smaller subtitle */
+  }
+
+  .testimonial-card {
+    padding: 15px; /* Reduced padding */
+    max-width: 90%; /* Allow more width */
+  }
+
+  .stars {
+    font-size: 18px; /* Slightly smaller star size */
+  }
+
+  .read-button {
+    padding: 8px 12px; /* Reduced padding for button */
   }
 }
