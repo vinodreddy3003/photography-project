@@ -11,6 +11,9 @@ import headerImage from '../assets/Frame 31.png';
 const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    // Get today's date in YYYY-MM-DD format
+    const today = new Date().toISOString().split('T')[0];
+
     const onSubmit = async (event) => {
         event.preventDefault();
         setIsSubmitting(true);
@@ -85,7 +88,6 @@ const Contact = () => {
                     <div className="separator"></div>
                     <div className="call">
                         <p>+91 9980400473, +91 8553429346</p>
-                        
                     </div>
                     <div className="que">
                         <p>Questions? Call us</p>
@@ -156,7 +158,12 @@ const Contact = () => {
 
                         <div className="form-group">
                             <label>Event Date *</label>
-                            <input type="date" name="Date" required />
+                            <input 
+                                type="date" 
+                                name="Date" 
+                                required 
+                                min={today}  // Only allow present and future dates
+                            />
                         </div>
 
                         <div className="form-group">
