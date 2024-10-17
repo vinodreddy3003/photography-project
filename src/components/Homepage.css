@@ -288,7 +288,7 @@
 }
 
 /* Small Phone version (max-width: 360px and max-height: 740px) */
-@media (max-width: 360px) and (max-height: 740px) {
+@media (max-width: 340px) and (max-height: 740px) {
     .homepage-swiper-slide {
         height: auto;
     }
@@ -302,7 +302,7 @@
 
     .header {
         font-size: 24px;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     
