@@ -16,7 +16,7 @@ const Contact = () => {
         setIsSubmitting(true);
 
         const formData = new FormData(event.target);
-        formData.append("access_key", 'a175f7a6-8092-45dc-a46f-84c4bb0c4e49');
+        formData.append("access_key", 'b69dc6ab-dd29-4e51-88a4-b381000ec9c2');
 
         const data = {
             Name: formData.get("Name"),
@@ -77,14 +77,14 @@ const Contact = () => {
                 <div className="contact-info">
                     <h2>Contact Us</h2>
                     <p>
-                        510, 2ND BLOCK, 4TH CROSS, 68, YAJAMAN LAYOUT, Begur, Bengaluru, Karnataka 560068<br />
+                        510, 2nd Block, 4TH Cross, 68, Yajaman Layout, Begur, Bengaluru, Karnataka 560068<br />
                         VJHF+W8 Bengaluru, Karnataka
                     </p>
                     <p className='location'>Check out our location</p>
 
                     <div className="separator"></div>
                     <div className="call">
-                        <p>+91 9980400473,+91 8553429346</p>
+                        <p>+91 9980400473, +91 8553429346</p>
                         
                     </div>
                     <div className="que">
@@ -92,11 +92,11 @@ const Contact = () => {
                     </div>
 
                     <div className="separator"></div>
-                    <div className="call"><p>mrsaicreator@gmail.com</p></div>
+                    <div className="call"><p>ajnaclicks@gmail.com</p></div>
 
                     <div className="que"><p>Drop us a line</p></div>
                     <div className="separator"></div>
-                    <div className="call"><p>Mon to Sat - 10:00 to 09:00</p></div>
+                    <div className="call"><p>Mon to Sat - 10:00AM to 09:00PM</p></div>
 
                     <p>Our common business hours</p>
                     <div className="separator"></div>
@@ -183,6 +183,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            
 
             <ChatButton />
             <FooterR />
