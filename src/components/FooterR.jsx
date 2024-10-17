@@ -18,7 +18,7 @@ const FooterR = () => {
       <div className="footer-left">
         <h3 className="footer-heading">Our Address</h3>
         <p className="footer-address">
-              510, 2ND BLOCK, 4TH CROSS, 68, YAJAMAN LAYOUT, Begur, Bengaluru, Karnataka 560068<br />
+        510, 2nd Block, 4TH Cross, 68, Yajaman Layout, Begur, Bengaluru, Karnataka 560068<br />
               VJHF+W8 Bengaluru, Karnataka<br />
                 Mobile Number: +919980400473,+918553429346
         </p>
