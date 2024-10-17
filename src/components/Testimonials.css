@@ -46,6 +46,7 @@
   padding: 20px;
   max-width: 900px;
   margin: auto;
+  text-align: justify;
 }
 .testimonial-card h4{
   font-family: 'poppins';
@@ -123,6 +124,11 @@
       font-size: 14px; /* Smaller button text */
       padding: 8px; /* Reduced padding for button */
   }
+  .testimonial-card p {
+    padding: 15px;  /* Adjust spacing for phones */
+    margin: 0 10px; /* Add margin to create space from edges */
+    text-align: justify; /* Keep text justified for alignment */
+}
 
   .modal-content {
       padding: 15px; /* Reduced padding in modal */
